@@ -1,0 +1,403 @@
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #1A252F;
+  color: #00eaff;
+  text-align: center;
+  overflow-x: hidden;
+  line-height: 2;
+}
+body {
+  padding-top: 80px;
+}
+
+
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  size: 30px;
+}
+
+.portfolio-section {      
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+h2 {
+  color: #F9FAFB;
+  margin-bottom: 10px;
+}
+
+/* ######Ecommerce Project######### */
+
+
+ .E-commerce-project-card {
+  background-color: #16213e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 0;
+  display: inline;
+}
+
+.E-commerce-toggle-btn {
+  float: right;
+  background-color: #3B82F6;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Expanded (default visible) */
+.E-commerce-dashboard-content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+    gap: 20px;            /* space between image and text */
+  margin-top: 10px;
+}
+
+/* Collapsed (hidden) */
+.E-commerce-dashboard-content.collapsed {
+  display: none;
+}
+
+.E-commerce-dashboard-img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.E-commerce-description {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.E-commerce-description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.E-commerce-description li {
+  margin-bottom: 10px;
+}
+
+/* ######Sales Project######### */
+
+ .Sales-project-card {
+  background-color: #16213e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 0;
+  display: inline;
+}
+
+.Sales-toggle-btn {
+  float: right;
+  background-color: #3B82F6;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Expanded (default visible) */
+.Sales-dashboard-content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+    gap: 20px;            /* space between image and text */
+  margin-top: 10px;
+}
+
+/* Collapsed (hidden) */
+.Sales-dashboard-content.collapsed {
+  display: none;
+}
+
+.Sales-dashboard-img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.Sales-description {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.Sales-description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Sales-description li {
+  margin-bottom: 10px;
+}
+.linkedin {
+  font-size: 18px;           /* bigger text */
+  color: #00d4ff;            /* bright blue color */
+  font-weight: bold;          /* make it bold */
+  margin-top: 10px;          /* optional spacing */
+    text-decoration: underline; /* makes it look like a link */
+  cursor: pointer; 
+}
+
+
+
+
+
+
+.container {
+  position: relative;
+  top: 20%;
+  z-index: 1;
+}
+
+
+p, ul {
+  font-size: 1.2rem;
+}
+
+
+
+.buttons .btn:hover {
+  background: #00eaff;
+  color: #0d0d0d;
+}
+
+section {
+  background: #0F172A;
+  margin: 50px auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 15px;
+  z-index: 1;
+  position: relative;
+  color: #F1F5F9;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+/* Animation style */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* زر تغيير الثيم */
+#theme-toggle {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  background: #3B82F6;
+  color: #0d0d0d;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+#theme-toggle:hover {
+  background: #009bbf;
+  color: #fff;
+}
+
+/* الثيم الفاتح */
+.light-mode {
+  background: #f5f5f5;
+  color: #0d0d0d;
+}
+
+.light-mode .buttons .btn {
+  border: 2px solid #0d0d0d;
+  color: #0d0d0d;
+}
+
+.light-mode .buttons .btn:hover {
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.light-mode section {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+NAVBAR
+
+.nav-links li a:hover {
+  color: #00eaff;
+}
+
+header {
+  width: 100%;
+  background:#1E293B;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  line-height: 1;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  line-height: 1;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #3B82F6;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00eaff;
+}
+
+/* Add spacing so hero doesn't hide under navbar */
+
+
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 100px auto;
+      background: #05050f;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero img {
+      width: 350px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      padding: 40px;
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .hero-text h2 {
+      margin: 10px 0;
+      font-size: 28px;
+      font-weight: bold;
+      color: #3a86ff; /* الأزرق للتايتل */
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #F1F5F9;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        width: 100%;
+      }
+
+      .hero-text {
+        padding: 20px;
+      }
+    }
+
+
+
+.skills-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d1b2a;
+  padding: 40px;
+  border-radius: 12px;
+  gap: 40px;
+
+  max-width: 80%;   /* takes 80% of the page width */
+  margin: 0 auto;
+}
+
+
+.skills-column {
+  flex: 1;
+  color: #e0e0e0;
+}
+
+.skills-column h2 {
+  color: #4cc9f0; /* accent blue */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.skills-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-column li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
