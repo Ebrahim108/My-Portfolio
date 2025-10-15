@@ -6,15 +6,15 @@
   <title>Ebrahim Elsayed Assem | Data Analyst</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <!-- NAVIGATION HEADER -->
 <header>
   <nav class="navbar">
     <div class="logo">Ebrahim Elsayed Assem</div>
-    <ul class="nav-links">
-       <li><a href="#skills-section" class="nvl">Skills</a></li>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#skills-section" class="nvl">Skills</a></li>
       <li><a href="#projects" class="nvl">Projects</a></li>
       <li><a href="#certificates" class="nvl">Certificates</a></li>
       <li><a href="Ebrahim Elsayed Assem Data Analyst CV.pdf" class="nvl" download>CV</a></li>
@@ -23,39 +23,22 @@
   </nav>
 </header>
 
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="My photo.jpg" alt="Ebrahim Elsayed">
+  <div class="hero-text">
+    <h1>Ebrahim Elsayed</h1>
+    <h2>Data Analyst</h2>
+    <p>
+      Welcome to my portfolio. I'm a data analyst dedicated to transforming raw data into actionable insights. 
+      I'm passionate about using data to drive business decisions and solve real-world problems. 
+      Explore my work and learn about my skills and experience.
+    </p>
+  </div>
+</section>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <img src="WhatsApp Image 2025-09-15 at 16.09.30_7564d155.jpg" alt="Ebrahim Elsayed">
-    <div class="hero-text">
-      <h1>Ebrahim Elsayed</h1>
-      <h2>Data Analyst</h2>
-      <p>
-        Welcome to my portfolio. I'm a data analyst dedicated to transforming raw data into actionable insights. 
-        I'm passionate about using data to drive business decisions and solve real-world problems. 
-        Explore my work and learn about my skills and experience.
-      </p>
-    </div>
-  </section>
-
-
-  <button id="theme-toggle">🌙 Dark Mode</button>
-
-
-  <!-- Sections -->
-   <!-- < <section id="skills" class="reveal">
-  <h2>Skills</h2>
-  <p>Python</p>
-  <p>Excel</p>
-  <p>SQL</p>
-  <p>Power BI</p>
-  <p>Tableau</p>
-  <p>Dax(Power BI , Excel)</p>
-  <p>Data Modelling</p>
-  <p>Python Libraries (Numpy , Pandas , Seaborn)</p>
-    <p> SQL | Power BI | Excel |  | Data Visualization</p>
-</section> > -->
-< <div class="skills-section">
+<!-- SKILLS SECTION -->
+<div class="skills-section" id="skills-section">
   <div class="skills-column">
     <h2>Technical Skills</h2>
     <ul>
@@ -80,46 +63,38 @@
       <li>🤝 Team Collaboration</li>
       <li>⏳ Time Management</li>
       <li>🔄 Adaptability</li>
-      <li>    Data Storytelling</li>
+      <li>📖 Data Storytelling</li>
     </ul>
   </div>
-</div> >
+</div>
 
-
-
-
-
-
-
-
+<!-- PROJECTS SECTION -->
 <section id="projects" class="reveal">
-  <!-- <h2>Projects</h2> -->
   <div class="portfolio-section">
     <h2>Projects:</h2>
-   <!-- Ecommerce Project -->
-<div class="E-commerce-project-card">
-  <h3>E-Commerce Dashboard:</h3>
-  <button class="E-commerce-toggle-btn">Expand</button>
 
-  <div class="E-commerce-dashboard-content collapsed">
-    <img src="Ecommerce Project Photo.png" alt="Dashboard Mockup" class="E-commerce-dashboard-img">
-
-    <div class="E-commerce-description">
-      <ul>
-        <li>📊 E-Commerce Dashboard Insights – Data-Driven Strategy in Action</li>
-        <li>I created this dashboard to answer key business questions and uncover actionable insights from our sales data. By leveraging SQL for data processing and Power BI for visualization, I transformed raw data into clear, data-driven strategies.</li>
+    <!-- E-Commerce Project -->
+    <div class="project-card">
+      <h3>E-Commerce Dashboard:</h3>
+      <button class="toggle-btn">Expand</button>
+      <div class="project-content collapsed">
+        <img src="Ecommerce Project Photo.png" alt="Dashboard Mockup" class="project-img">
+        <div class="project-description">
+        <ul>
+        <li class="project-title">📊 E-Commerce Dashboard Insights – Data-Driven Strategy in Action</li>
+        <li class="project-description">I created this dashboard to answer key business questions and uncover actionable insights from our sales data. By leveraging SQL for data processing and Power BI for visualization, I transformed raw data into clear, data-driven strategies.</li>
         <li>🔍 Key Questions & Insights:</li>
-        <li>• Which categories generate the most revenue? </li>
+        <li class="project-questions">• Which categories generate the most revenue? </li>
         <li> Sports, Toys, Books, and Clothing lead in performance.</li>
-        <li>• Who are our most valuable customers by demographic? </li>
+        <li class="project-questions">• Who are our most valuable customers by demographic? </li>
         <li>  Gen Z (age 15–30) contributes 22% of total revenue.</li>
-        <li>• Which countries generate the most revenue?</li>
+        <li class="project-questions">• Which countries generate the most revenue?</li>
         <li> tops the list, while the UK lags behind.</li>
-        <li>• What are the preferred payment methods for high-value transactions? </li>
+        <li class="project-questions">• What are the preferred payment methods for high-value transactions? </li>
         <li> on Delivery and UPI dominate.</li>
-        <li>• How do sales trends vary throughout the year?</li>
+        <li class="project-questions">• How do sales trends vary throughout the year?</li>
          <li> Revenue remains stable with slight growth toward Q4.</li>
-        <li>• Who are our top customers?</li> 
+        <li class="project-questions">• Who are our top customers?</li> 
           <li>Identified key high-spending individuals to target for retention.</li>
         <li>💡 This dashboard isn't just for reporting — it's a decision-making tool.</li>
       </ul>
@@ -129,22 +104,23 @@
   <a class="linkedin" href="https://www.linkedin.com/in/ebrahim-el-sayed-407238228/" target="_blank">
     Watch Here
   </a>
-</p>
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="E-commerce-project-card">
-  <h3>Sales Dashboard:</h3>
-  <button class="Sales-toggle-btn">Expand</button>
 
-  <div class="Sales-dashboard-content collapsed">
-    <img src="Sales Project.png" alt="Dashboard Mockup" class="Sales-dashboard-img">
-    <div class="Sales-description">
-      <ul>
-        <li>🎓✨ Proud to share our Graduation Project from the EYouth Data Analysis Bootcamp</li>
-           <li> An advanced and insightful  Power BI Dashboard developed by me and my amazing teammates</li>
-<li> project reflects months of learning, collaboration, and real-world application. It provides interactive insights on :- </li>
-<li> Sales, Marketing, Finance, Customer Behavior, and Business Growth, all powered by a solid data model and dynamic DAX measures.</li>
+    <!-- Sales Project -->
+    <div class="project-card">
+      <h3>Sales Dashboard:</h3>
+      <button class="toggle-btn">Expand</button>
+      <div class="project-content collapsed">
+        <img src="Sales Project.png" alt="Sales Dashboard" class="project-img">
+        <div class="project-description">
+                <ul>
+        <li class="project-title">🎓✨Graduation Project from the EYouth Data Analysis Bootcamp</li>
+           <li class="project-description"> An advanced and insightful  Power BI Dashboard developed by me and my amazing teammates</li>
+<li class="project-description"> project reflects months of learning, collaboration, and real-world application. It provides interactive insights on :- </li>
+<li class="project-description"> Sales, Marketing, Finance, Customer Behavior, and Business Growth, all powered by a solid data model and dynamic DAX measures.</li>
 <li>📊 We transformed raw data into meaningful business insights</li> — using MySQL Workbench to write and execute queries, hosting the database on the cloud for accessibility and scalability, and delivering everything with a professional presentation that brought our analysis to life.</li>
 
       </ul>
@@ -154,47 +130,37 @@
   <a class="linkedin" href="https://www.linkedin.com/in/ebrahim-el-sayed-407238228/" target="_blank">
     Watch Here
   </a>
-</p>
-
-
-      
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<!-- ################## -->
-
- 
 </section>
 
+<!-- CERTIFICATES -->
 <section id="certificates" class="reveal">
-  <h2>Certificates</h2>
-  <ul>
+  <h2 class="certificates-header">Certificates</h2>
+  <ul class="certificate-list">
     <li>Google Data Analytics Certificate</li>
     <li>Microsoft Power BI Certificate</li>
     <li>Python for Data Analysis</li>
-    <li>Data Base Fundamentals with ITI</li>
-    <li>SQL course 365 Data Science</li>
-    <li> Udemy Power BI Mastery </li>
+    <li>Database Fundamentals with ITI</li>
+    <li>SQL Course 365 Data Science</li>
+    <li>Udemy Power BI Mastery</li>
   </ul>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="reveal">
   <h2>Contact Me</h2>
   <p>Email: <a href="mailto:ee801841@gmail.com">ee801841@gmail.com</a></p>
-  <p>LinkedIn: <a href="#">"https://www.linkedin.com/in/ebrahim-el-sayed-407238228/"</a></p>
-  <p>Phone: <a href="#">01098248043</a></p>
-
-
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/ebrahim-el-sayed-407238228/" target="_blank">LinkedIn Profile</a></p>
+  <p>Phone: <a href="tel:01098248043">01098248043</a></p>
 </section>
 
-  
-
-  <!-- Background Animation -->
-  <canvas id="bgCanvas"></canvas>
-  <script src="script.js"></script>
+<!-- Background Canvas -->
+<canvas id="bgCanvas"></canvas>
+<script src="script.js"></script>
+<script src="responsive.js"></script>
 </body>
 </html>
-
-
-
-
