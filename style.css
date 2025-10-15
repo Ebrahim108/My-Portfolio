@@ -1,4 +1,4 @@
-
+/* GENERAL STYLES */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -7,251 +7,14 @@ body {
   text-align: center;
   overflow-x: hidden;
   line-height: 2;
-}
-body {
   padding-top: 80px;
 }
 
-
-
 h1, h2 {
   font-family: 'Poppins', sans-serif;
-  size: 30px;
 }
 
-.portfolio-section {      
-  color: #fff;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-
-h2 {
-  color: #F9FAFB;
-  margin-bottom: 10px;
-}
-
-/* ######Ecommerce Project######### */
-
-
- .E-commerce-project-card {
-  background-color: #16213e;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  margin: 0;
-  display: inline;
-}
-
-.E-commerce-toggle-btn {
-  float: right;
-  background-color: #3B82F6;
-  border: none;
-  padding: 5px 10px;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Expanded (default visible) */
-.E-commerce-dashboard-content {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 10px;
-    gap: 20px;            /* space between image and text */
-  margin-top: 10px;
-}
-
-/* Collapsed (hidden) */
-.E-commerce-dashboard-content.collapsed {
-  display: none;
-}
-
-.E-commerce-dashboard-img {
-  width: 50%;
-  border-radius: 5px;
-}
-
-.E-commerce-description {
-  width: 50%;
-  padding-left: 20px;
-}
-
-.E-commerce-description ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.E-commerce-description li {
-  margin-bottom: 10px;
-}
-
-/* ######Sales Project######### */
-
- .Sales-project-card {
-  background-color: #16213e;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  margin: 0;
-  display: inline;
-}
-
-.Sales-toggle-btn {
-  float: right;
-  background-color: #3B82F6;
-  border: none;
-  padding: 5px 10px;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Expanded (default visible) */
-.Sales-dashboard-content {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 10px;
-    gap: 20px;            /* space between image and text */
-  margin-top: 10px;
-}
-
-/* Collapsed (hidden) */
-.Sales-dashboard-content.collapsed {
-  display: none;
-}
-
-.Sales-dashboard-img {
-  width: 50%;
-  border-radius: 5px;
-}
-
-.Sales-description {
-  width: 50%;
-  padding-left: 20px;
-}
-
-.Sales-description ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.Sales-description li {
-  margin-bottom: 10px;
-}
-.linkedin {
-  font-size: 18px;           /* bigger text */
-  color: #00d4ff;            /* bright blue color */
-  font-weight: bold;          /* make it bold */
-  margin-top: 10px;          /* optional spacing */
-    text-decoration: underline; /* makes it look like a link */
-  cursor: pointer; 
-}
-
-
-
-
-
-
-.container {
-  position: relative;
-  top: 20%;
-  z-index: 1;
-}
-
-
-p, ul {
-  font-size: 1.2rem;
-}
-
-
-
-.buttons .btn:hover {
-  background: #00eaff;
-  color: #0d0d0d;
-}
-
-section {
-  background: #0F172A;
-  margin: 50px auto;
-  padding: 30px;
-  width: 80%;
-  border-radius: 15px;
-  z-index: 1;
-  position: relative;
-  color: #F1F5F9;
-}
-
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-/* Animation style */
-.reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* زر تغيير الثيم */
-#theme-toggle {
-  position: fixed;
-  top: 70px;
-  right: 20px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 25px;
-  background: #3B82F6;
-  color: #0d0d0d;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-  z-index: 10;
-}
-
-#theme-toggle:hover {
-  background: #009bbf;
-  color: #fff;
-}
-
-/* الثيم الفاتح */
-.light-mode {
-  background: #f5f5f5;
-  color: #0d0d0d;
-}
-
-.light-mode .buttons .btn {
-  border: 2px solid #0d0d0d;
-  color: #0d0d0d;
-}
-
-.light-mode .buttons .btn:hover {
-  background: #0d0d0d;
-  color: #fff;
-}
-
-.light-mode section {
-  background: rgba(255, 255, 255, 0.7);
-}
-
-NAVBAR
-
-.nav-links li a:hover {
-  color: #00eaff;
-}
-
+/* NAVIGATION */
 header {
   width: 100%;
   background:#1E293B;
@@ -261,16 +24,14 @@ header {
   left: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-  line-height: 1;
 }
 
 .navbar {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* logo left, links right */
+  justify-content: space-between;
   align-items: center;
-  line-height: 1;
 }
 
 .logo {
@@ -291,76 +52,63 @@ header {
   text-decoration: none;
   color: #3B82F6;
   font-size: 16px;
-  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: #00eaff;
 }
 
-/* Add spacing so hero doesn't hide under navbar */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
 
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 100px auto;
+  background: #05050f;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
 
-    /* HERO SECTION */
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: 1000px;
-      margin: 100px auto;
-      background: #05050f;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    }
+.hero img {
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+}
 
-    .hero img {
-      width: 350px;
-      height: auto;
-      object-fit: cover;
-    }
+.hero-text {
+  padding: 40px;
+  max-width: 600px;
+}
 
-    .hero-text {
-      padding: 40px;
-      max-width: 600px;
-    }
+.hero-text h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
 
-    .hero-text h1 {
-      margin: 0;
-      font-size: 36px;
-      font-weight: bold;
-    }
+.hero-text h2 {
+  margin: 10px 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #3a86ff;
+}
 
-    .hero-text h2 {
-      margin: 10px 0;
-      font-size: 28px;
-      font-weight: bold;
-      color: #3a86ff; /* الأزرق للتايتل */
-    }
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #F1F5F9;
+}
 
-    .hero-text p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #F1F5F9;
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .hero img {
-        width: 100%;
-      }
-
-      .hero-text {
-        padding: 20px;
-      }
-    }
-
-
-
+/* SKILLS SECTION */
 .skills-section {
   display: flex;
   justify-content: space-between;
@@ -368,11 +116,9 @@ header {
   padding: 40px;
   border-radius: 12px;
   gap: 40px;
-
-  max-width: 80%;   /* takes 80% of the page width */
+  max-width: 80%;
   margin: 0 auto;
 }
-
 
 .skills-column {
   flex: 1;
@@ -380,7 +126,7 @@ header {
 }
 
 .skills-column h2 {
-  color: #4cc9f0; /* accent blue */
+  color: #4cc9f0;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -395,9 +141,207 @@ header {
   font-size: 16px;
 }
 
+/* PROJECTS */
+.project-card {
+  background-color: #16213e;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.toggle-btn {
+  float: right;
+  background-color: #3B82F6;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  top: -45px;
+}
 
 
 
+.project-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.project-content.collapsed {
+  display: none;
+}
+
+.project-img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.project-description {
+  width: 50%;
+  padding-left: 20px;
+}
+/* ===== E-Commerce Dashboard Project Styling ===== */
+
+/* 1️⃣ Project Title */
+.project-title {
+  font-family: 'Poppins', 'Montserrat', 'Segoe UI', sans-serif;
+  font-size: 20px;
+  font-weight: 300; /* Bold */
+  color: #00E0FF; /* Bright Cyan */
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.project-description {
+  font-family: 'Open Sans', 'Poppins', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  font-weight: 250;
+  color: #B0C4DE; /* Light Steel Blue */
+  line-height: 1.8;
+  text-align: left; /* make it natural */
+  max-width: 850px;
+  margin: 0 auto 30px auto;
+  white-space: normal; /* ensures normal wrapping */
+}
+
+
+/* 3️⃣ Key Questions & Insights */
+.project-questions {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-size: 17px;
+  font-weight: 300; /* Medium */
+  color: #FFD700; /* Golden Yellow */
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Optional – make question list look clean */
+.project-questions ul {
+  list-style-type: '💡 ';
+  margin-left: 25px;
+  padding: 0;
+}
+
+.project-questions li {
+  margin-bottom: 10px;
+}
 
 
 
+/* LINK STYLE */
+.linkedin {
+  font-size: 18px;
+  color: #00d4ff;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  background: #0F172A;
+  margin: 50px auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 15px;
+  position: relative;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    background: #1E293B;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin: 80px 20px;
+  }
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  .hero-text {
+    padding: 15px;
+  }
+  .skills-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    max-width: 90%;
+  }
+  .skills-column {
+    width: 100%;
+    text-align: center;
+  }
+  .project-content {
+    flex-direction: column;
+  }
+  .project-img, .project-description {
+    width: 100%;
+    padding-left: 0;
+  }
+  section {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/* 🌟 Section 1: The Heading Style (Certificates) 🌟 */
+.certificates-header  {
+    /* Color: A bright, electric blue */
+    color: #00ffff;
+    text-align: center;
+    font-size: 2.2em;
+    /* Font: Example of a bold, professional font-family */
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+/* 📜 Section 2: The List Item Style (The Certificate Names) 📜 */
+.certificate-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.certificate-list li {
+    /* Color: A softer, contrasting white/light gray */
+    color: #cccccc; 
+    font-size: 1.1em;
+    /* Font: Example of a readable, clean font-family */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 10px 0;
+    line-height: 1.4;
+}
+
+/* Optional: Re-adding a custom, subtle bullet point for structure */
+.certificate-list li::before {
+    content: "•";
+    color: #58a6ff; /* A slightly darker blue for the bullet */
+    margin-right: 15px;
+    font-size: 1.2em;
+}
